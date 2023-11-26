@@ -1,0 +1,10 @@
+#frm1 {
+     width: 600px; margin: auto;
+     border: 2px solid darkslategrey; 
+     padding: 10px;
+     background-color: bisque; 
+    } 
+#frm1 label { color: darkslategray; width: 120px; display: inline-block; }
+#frm1 .txt { width: 450px; padding: 8px; border: 1px solid lightcoral; }
+#frm1 button { width: 120px; height: 40px; }
+#frm1 i.fas{position: relative; left:-30px;cursor: pointer;}

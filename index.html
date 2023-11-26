@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC- Âm nhạc chữa lành</title>
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/styles.css">
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <div class="taskbar-top fixed">
+            <div class="container">
+                <div class="fleft header-top-left">
+                    <img src="https://www.haui.edu.vn/dnn/web/haui/assets/images/logo-ngang.webp" alt="" width="220"
+                        height="50px">
+                </div>
+                <div class="fleft header-top-right">
+                    <div class="fleft top-right-search">
+                        <button class="search-icon">
+                            <span class="ti-search" ></span>
+                        </button>
+                        <input type="text" placeholder="Tìm kiếm..." autocomplete="off" class="txt-search" onchange="searchHistory()">
+                    </div>
+                    
+                    <div class="fleft top-right-upload">
+                        <a href="#">
+                           
+                        </a>
+                    </div>
+                    <div class="fixed top-right-login">
+                        <a href="login.html"><i class="ti-user" style="color:#fff"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-bottom">
+            <div class="container">
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-item"><a href="index.html" class="son">TRANG CHỦ</a></li>
+                        <li class="menu-item"><a href="#">BÀI HÁT</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item-2"><a href="#">VIỆT NAM</a></li>
+                                <li class="menu-item-2"><a href="#">ÂU MỸ</a></li>
+                                <li class="menu-item-2"><a href="#">CHÂU Á</a></li>
+                                <li class="menu-item-2"><a href="#">KHÁC</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="playlist.html">PLAYLIST</a></li>
+                        <li class="menu-item"><a href="https://www.nhaccuatui.com/playlist/tags">TUYỂN TẬP</a></li>
+                        <li class="menu-item"><a href="https://www.nhaccuatui.com/video.html">VIDEO</a></li>
+                        <li class="menu-item"><a href="https://www.nhaccuatui.com/bai-hat/top-20.nhac-viet.html">BXH</a></li>
+                        <li class="menu-item"><a href="https://www.nhaccuatui.com/chu-de.html">CHỦ ĐỀ</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="./images/1.png" alt="">
+                <img src="./images/2.png" alt="">
+                <img src="./images/3.png" alt="">
+                <img src="./images/4.png" alt="">
+                
+              </div>
+        </div>
+
+    </header>
+   <!-- body -->
+    <div class="body">    
+        <div style="display: flex">
+            <div id="center">
+                <div class="container">
+                    
+                    <div id="top-songs" class="overflow">
+                        <h2 class="box-title">
+                            <span>Biểu Đồ Xếp Hạng</span>
+                        </h2>
+                        
+                    </div>
+              
+
+                </div>
+            </div>
+            <button class="ti-menu-alt icon-menu" id ="btn-input"></button>
+            <div id="right">
+                <div class="discount">
+                    <div class="text_discount ">
+                  
+                        <a href="index.html" class=" ti-home icon-menu"> TRANG CHỦ</a> <br>
+                        <a href="#" class=" ti-server icon-menu"> Thư Viện</a> <br>
+                        <a href="#" class=" ti-heart icon-menu"> Yêu Thích</a> <br>
+                        <a href="#" class=" ti-panel icon-menu"> Playlist</a> <br>
+                        <a href="#" class=" ti-cup icon-menu"> BXH</a> <br>
+                        <a href="#" class=" ti-cloud-up icon-menu"> Upload</a> <br>
+                        <a href="#" class=" ti-reload icon-menu" id="js-change-color"> Đổi màu chủ đề </a> <br>
+
+                        <img id="anh" src="https://leerit.com/media/blog/uploads/2017/02/06/music3.jpg"alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Phần section -->
+    <section id="main-content">
+        <div class="container-section">
+            <div class="content_sidebar">
+                <div class="home-box home-box-tax">
+                    <h2 class="box-title">
+                        <span>Nghệ Sĩ Nổi Bật</span>
+                        
+                    </h2>
+                    <div id="intro-owl-1">
+                        <div class="autoplay">
+                            <a href="#">
+                            <img class="music-title1" src="/Bach/images/rsz_mrsiro.jpg" alt="">
+
+                            <a href="#">
+                            <img class="music-title1" src="/Bach/images/rsz_rhymastic.jpg" alt="">
+                      
+                            <a href="#">
+                            <img class="music-title1" src="/Bach/images/rsz_phuongly.jpg" alt="">
+                           
+                            <a href="#">
+                            <img class="music-title1" src="/Bach/images/rsz_hnh.jpg"alt="">
+
+                            <a href="#">
+                            <img class="music-title1" src="/Bach/images/rsz_mono.jpg" alt="">
+
+                            <a href="#">
+                            <img class="music-title1" src="/Bach/images/rsz_bestofsoobin.jpg" alt="">
+
+
+                            <a href="#">
+                            <img class="music-title1" src="/Bach/images/rsz_sontung.jpg" alt="">
+
+                            <a href="#">
+                            <img class="music-title1" src="/Bach/images/rsz_pmq.jpg" alt="">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="home-box">
+                    <h2 class="box-title">
+                        <span>Bài Hát Cho Hôm Nay</span>
+                    </h2>
+                    <div id="wrapper">
+                        <ul class="products">
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="https://www.nhaccuatui.com/bai-hat/the-he-tan-vo-kai-dinh-ft-sivan-minh-an-sivan.tiLbAc1r71yE.html" class="product-thumb">
+                                            <img src="/Bach/images/1.jpg" alt=""
+                                                width="300px">
+                                        </a>
+                                        <span class="icon-instal">1</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="#" class="buy-now" style="line-height: 220px;">
+                                            <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i>
+                                           </a>
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="https://www.nhaccuatui.com/bai-hat/the-he-tan-vo-kai-dinh-ft-sivan-minh-an-sivan.tiLbAc1r71yE.html" class="product-cat">Kai dinh ft. Sivan</a>
+                                    <a href="https://www.nhaccuatui.com/bai-hat/the-he-tan-vo-kai-dinh-ft-sivan-minh-an-sivan.tiLbAc1r71yE.html" class="product-name">Thế Hệ Tan Vỡ</a>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="https://www.nhaccuatui.com/bai-hat/so-kiep-da-dinh-trung-iu-ft-man.4jDkyYS1sahX.html" class="product-thumb">
+                                            <img  src="/Bach/images/rsz_2.jpg" alt=""
+                                                width="300px">
+                                        </a>
+                                        <span class="icon-instal">2</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="#" class="buy-now" style="line-height: 220px;">
+                                            <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i>
+                                           </a>
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="https://www.nhaccuatui.com/bai-hat/so-kiep-da-dinh-trung-iu-ft-man.4jDkyYS1sahX.html" class="product-cat">Trung I.U ft. Mẫn</a>
+                                    <a href="https://www.nhaccuatui.com/bai-hat/so-kiep-da-dinh-trung-iu-ft-man.4jDkyYS1sahX.html" class="product-name">Số Kiếp Đã Định</a>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="https://www.nhaccuatui.com/bai-hat/neu-luc-do-tlinh-ft-2pillz.lCsP4zNhaBoE.html" class="product-thumb">
+                                            <img  src="/Bach/images/rsz_3.jpg" alt=""
+                                                width="300px">
+                                        </a>
+                                        <span class="icon-instal">3</span>
+                                        <!-- <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="#" class="buy-now" style="line-height: 220px;">
+                                            <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i>
+                                           </a>
+
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="https://www.nhaccuatui.com/bai-hat/neu-luc-do-tlinh-ft-2pillz.lCsP4zNhaBoE.html" class="product-cat">Tlinh ft. 2pilz </a>
+                                    <a href="https://www.nhaccuatui.com/bai-hat/neu-luc-do-tlinh-ft-2pillz.lCsP4zNhaBoE.html" class="product-name">Nếu Lúc Đó </a>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop ">
+                                        <a href="https://www.nhaccuatui.com/bai-hat/lan-cuoi-di-ben-em-xot-xa-nguoi-oi-ngot.a6UIjKwFFGLI.html" class="product-thumb">
+                                            <img  src="/Bach/images/rsz_4.jpg" alt=""
+                                                width="300px">
+                                        </a>
+                                        <span class="icon-instal">4</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="#" class="buy-now" style="line-height: 220px;">
+                                            <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i>
+                                           </a>
+
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="https://www.nhaccuatui.com/bai-hat/lan-cuoi-di-ben-em-xot-xa-nguoi-oi-ngot.a6UIjKwFFGLI.html" class="product-cat">Ngọt</a>
+                                    <a href="https://www.nhaccuatui.com/bai-hat/lan-cuoi-di-ben-em-xot-xa-nguoi-oi-ngot.a6UIjKwFFGLI.html" class="product-name">LẦN CUỐI (đi bên em xót xa người ơi)</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="button load-more">Xem thêm bài hát </button>
+                    </div>
+                    <h2 class="box-title">
+                        <span>Top 50 Bài Hát Yêu Thích</span>
+                    </h2>
+                    <div id="wrapper">
+                        <ul class="products">
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/01/7/e/7/a/1677652422355_500.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">1</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/re-ndm-wtran-ft-ca-nau.9gvVeiELZlKq.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Rê NDM</a>
+                                    <div class="product-price"> Wtran, Cà Nâu
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/21/5/5/b/2/1679372862381.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">2</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/diem-xui-daduc.9IQuJunOhc8Y.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Điềm Xui</a>
+                                    <div class="product-price"> Daduc
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/21/5/5/b/2/1679388003327.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">3</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/ta-con-yeu-nhau-duc-phuc.sP0tNl0x4W3N.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Mashup We Don't Talk Anymore</a>
+                                    <div class="product-price">Đức Phúc</div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/04/04/c/3/f/a/1680579872259.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">4</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/giu-em-that-lau-naod.TPDciU83yMeU.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Giữ Em Thật Lâu</a>
+                                    <div class="product-price">Naod
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://stc-id.nixcdn.com/v11/images/avatar_default.jpg" alt=""
+                                                width="300px">
+                                        </a>
+                                        <span class="icon-instal">5</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/co-duoc-khong-em-cover-xuan-sam.8a0ecQkoye1M.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Có Được Không Em Cover</a>
+                                    <div class="product-price">Xuân Sâm
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/29/9/d/c/7/1680064776976.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">6</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/dung-bat-em-phai-quen-miu-le.cN6NAPNm9BHC.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Đừng Bắt Em Phải Quên</a>
+                                    <div class="product-price">Miu Lê</div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/21/5/5/b/2/1679377007024.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">7</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/that-tinh-trinh-dinh-quang.IJEGBUbjZmpP.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Thất Tình</a>
+                                    <div class="product-price">Đức Phúc</div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/21/5/5/b/2/1679396959846.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">8</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/gio-lofi-ver-jank-ft-kprox.IDVOraNCFVN9.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Gió (Lofi)</a>
+                                    <div class="product-price">Jank, 1 9 6 7</P>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="products">
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/21/5/5/b/2/1679373981674.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">9</span>
+                                        <!--  <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i> -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/ly-do-la-gi-cover-thai-hoc.K6EwXuEHF8Ig.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Lý Do Là Gì (Cover)</a>
+                                    <div class="product-price">Thái Học</P>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/21/5/5/b/2/1679378037821.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">10</span>
+                                        <!-- Nghe ngay -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/bui-bay-vao-mat-bbnhi._L-tx3FKQo.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Bụi Bay Vào Mắt</a>
+                                    <div class="product-price">Đông Nhi</div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/04/3/2/c/4/1677931403682.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">11</span>
+                                        <!-- Nghe ngay -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/anh-hua-anh-khong-khoc-khanh-trung-ft-pham-sac-lenh.VXkRUqbWVlQB.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Anh Hứa Anh Không Khóc</a>
+                                    <div class="product-price">Khánh Trung, Phạm Sắc Lệnh</div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <div >
+                                    <div class="producttop">
+                                        <a href="" class="product-thumb">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/song/2023/03/04/3/2/c/4/1677931427545.jpg"
+                                                alt="" width="300px">
+                                        </a>
+                                        <span class="icon-instal">12</span>
+                                        <!-- Nghe ngay -->
+                                        <a href="https://www.nhaccuatui.com/bai-hat/o-vay-la-yeu-chua-mpacific-ft-ned-d.d4wkRVw0a2gd.html" class="buy-now"> <i class="ti-control-skip-backward icon"></i><i class="ti-control-play icon"></i> <i class="ti-control-skip-forward icon"></i></a>
+
+                                    </div>
+                                </div>
+                                <div class="produc-info">
+                                    <a href="" class="product-cat">music</a>
+                                    <a href="" class="product-name">Ơ Vậy Là Yêu Chưa</a>
+                                    <div class="product-price">MPacific, Ned D
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="https://www.nhaccuatui.com/bai-hat/bai-hat-moi.html"><button class="button load-more">Xem thêm bài hát</button></a>
+			            <div class="keywords-search">
+                            <div class="keywords-search1">
+                                <div id="title_keywords-search" style="color: black">
+                                    <h1 style="color: black">TỪ KHÓA ĐƯỢC TÌM KIẾM GẦN ĐÂY</h1>
+                                </div>
+                                <script>
+                                    function searchHistory() {
+                                        var recentSearch = []
+                                        recentSearch.push($('.txt-search').val());
+                
+                                        $.each(recentSearch, function(index, value){
+                                            const p = document.createElement("p");
+                                            p.innerHTML = value;
+                                            document.getElementById("title_keywords-search").appendChild(p);
+                                        })
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                        <h2 class="box-title1">
+                            <span>Liên Kết Và Hợp Tác</span>
+                        </h2>
+                        <div id="intro-owl-2">
+                            <div class="your-class">
+                                <div class="slider-thuong-hieu-item">
+                                    <a href="#"><img src="https://stc-id.nixcdn.com/v11/images/footer/17.png"alt=""></a>
+                                    <a href="#"><img src="https://stc-id.nixcdn.com/v11/images/footer/19.png"alt=""></a>
+                                    <a href="#"><img src="https://stc-id.nixcdn.com/v11/images/footer/12.png"alt=""></a>
+                                    <a href="#"><img src="https://stc-id.nixcdn.com/v11/images/footer/9.png" alt=""></a>
+                                    <a href="#"><img src="https://stc-id.nixcdn.com/v11/images/footer/15.png"alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container-footer">
+                <div class="footer-top-list">
+                    <div class="row">
+                        <div class="col-md-4 footer-box">
+                            <div class="footer-box-1">
+                                <p style="text-align: left;">
+                                    <span style="font-size: 12pt;color: rgb(109, 176, 212);">
+                                        <strong>HỖ TRỢ</strong></span>
+                                </p>
+                                <P style="text-align: left;">
+                                    <span style="color: rgb(86, 6, 6);">
+                                        <span style="font-size: 12pt;">Hotline/Zalo: 0763138101</span>
+                                    </span>
+                                </P>
+                                <P style="text-align: left;">
+                                    <span style="color: rgb(86, 6, 6);">
+                                        <span style="font-size: 12pt;">Email: nhom1@gmail.com</span>
+                                    </span>
+                                </P>
+                                <P style="text-align: left;">
+                                    <span style="color: rgb(86, 6, 6)">
+                                        <span style="font-size: 12pt;">Bắc Từ Liêm - Hà Nội </span>
+                                    </span>
+                                </P>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 footer-box-2">
+                            <p class="footer-title-1">CHÍNH SÁCH CHUNG</p>
+                            <div class="footer-sub footer-menu">
+                                <ul>
+                                    <li><a href="#">Chính sách bảo mật</a></li>
+                                    <li><a href="#">Chính sách SHTT</a></li>
+                                    <li><a href="#">Thỏa thuận sử dụng</a></li>
+                                    <li><a href="#">Chính sách bảo mật thông tin</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5 footer-box-3">
+                            <p class="footer-title-2">THEO DÕI CHÚNG TÔI TRÊN</p>
+                            <div class="footer-title-pr">
+                                <ul>
+                                    <li class="icons-follow"><a href="#"><i class="ti-facebook"></i> Facebook</a></li>
+                                    <li class="icons-follow"><a href="#"><i class="ti-twitter-alt"></i> Twitter</a></li>
+                                    <li class="icons-follow"><a href="#"><i class="ti-youtube"></i> Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"></div>
+      
+</body>
+<script src="javacp/changecolor.js"></script>
+<script src="javacp/bar.js"></script>
+<script src="javacp/api.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</html>

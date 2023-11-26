@@ -1,0 +1,36 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>đăng nhập</title>
+<link rel="stylesheet" href="style/dangnhap.css"></head>
+<link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <form id="frm1" method="post">
+        <p><button>
+            <a href="index.html">Trang chủ</a>
+        </button></p>
+        <p>
+          <label>Tên đăng nhập</label>
+          <input type="text" minlength="6" maxlength="20" onkeyup="daoNutDN()" class="txt" id="un" name="un" placeholder="Nhập 6-20 ký tự" autocomplete="off" autofocus />        </p>
+        <p>
+          <label>Mật khẩu</label>
+          <input type="password"  minlength="8" maxlength="30" onkeyup="daoNutDN()" class="txt" id="mk" name="mk" placeholder="Mật khẩu"/>
+          <i class="fas fa-eye" onclick="daoTT()" ></i>        </p>
+        <p>
+          <label></label>
+          <button type="submit" name="btndangnhap" id="btndangnhap" value="nut">
+              <a href="index.html">Đăng nhập</a>
+          </button>
+         
+        </p>
+        <p>Bạn chưa có tài khoản?</p><a href="đăng ký.html">Đăng ký tài khoản mới</a>
+      </form>
+      <script> 
+        document.getElementById("btndangnhap").disabled=true;
+     </script>
+</body>
+<!-- <script src="javacp/dang nhap.js"></script> -->
+<script src="test.js"></script>
+
+</html></html>
